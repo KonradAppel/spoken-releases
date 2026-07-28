@@ -22,3 +22,9 @@ authenticated with Sparkle's EdDSA signature before installation.
 
 This repository contains release assets only. Application development happens
 in the separate source repository.
+
+## Support
+
+If Spoken is useful to you, you can
+[buy Konrad a coffee](https://buymeacoffee.com/KonradAppel) to support its
+independent development.
