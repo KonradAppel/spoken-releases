@@ -4,6 +4,66 @@
         <title>Spoken</title>
         <item>
             <title>0.1.0</title>
+            <pubDate>Wed, 12 Aug 2026 16:27:51 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.5</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.1.0 Alpha 1 — Test Build 5
+
+Test Build 5 replaces Test Build 4, which passed static signature validation
+but could not launch after installation because its ad-hoc app signature
+enabled Hardened Runtime library validation for the bundled Sparkle framework.
+
+## What is new
+
+- Meeting capture returns to idle as soon as the authoritative Mic/System audio
+  and timeline are safely stored. Transcription, review, flows, and the derived
+  playback mix continue independently.
+- The Notch guides a compact speaker review with stable audio samples, naming,
+  previous/next navigation, source-specific speaker counts, and optional
+  proposal-based re-diarization.
+- Project flows are shown and approved per meeting before they run. Failed
+  flows can be retried individually, and provider/model routing errors are now
+  actionable.
+- Audio can be dropped directly onto a project or imported from its project
+  action without first creating an empty meeting.
+- “Open in Hub” restores the Spoken window and opens the exact meeting
+  transcript or outstanding review.
+- Hidden meeting recordings briefly reveal their Mic/System activity every
+  five minutes as a quiet reminder that capture is still running.
+- Screenshot notes remain open until they are attached, skipped, or dismissed.
+- The read-only Spoken MCP helper and existing local project access controls
+  remain included.
+
+## Fixed since Test Build 4
+
+- The unsigned invited-tester package now launches correctly from Applications.
+  Its app, bundled MCP helper, and Sparkle components use a consistent ad-hoc
+  signing mode without Developer ID-only library validation.
+
+## Installation
+
+1. Download the DMG.
+2. Drag Spoken into Applications.
+3. Because this test build is not notarized, Control-click Spoken and choose
+   Open. If macOS still blocks it, use System Settings → Privacy & Security →
+   Open Anyway.
+
+## Important
+
+This build uses an ad-hoc code signature and is not notarized. It is intended
+only for invited alpha testing on Apple Silicon Macs. Local oMLX or Ollama
+routes must be running when selected; enterprise or cloud-compatible routes
+must be configured explicitly. The supported alpha release will use Developer
+ID signing and Apple notarization.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.1.0-alpha.1-test.5/Spoken-0.1.0-alpha.1-build.5-arm64-UNSIGNED.dmg" length="13149548" type="application/octet-stream" sparkle:edSignature="wcsu+QRZmkk73HaQ/QkaeqVahbMAPXDMT9e7Tw+xBAc+6Bb9+m9/NKh7icMwwRTPWcCgwO9iVTepscERdAx+AQ=="/>
+        </item>
+        <item>
+            <title>0.1.0</title>
             <pubDate>Wed, 12 Aug 2026 16:13:08 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.4</link>
             <sparkle:channel>alpha</sparkle:channel>
