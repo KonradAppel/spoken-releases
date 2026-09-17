@@ -4,6 +4,55 @@
         <title>Spoken</title>
         <item>
             <title>0.1.0</title>
+            <pubDate>Thu, 17 Sep 2026 23:51:46 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.12</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.1.0 Alpha 1 — Test Build 12
+
+Test Build 12 includes the installer, setup, speech-model progress, and Notch
+legibility fixes from Build 11. It adds a quieter in-app update flow for future
+test builds.
+
+## What changed
+
+- When a later update is available, a blue download icon appears next to
+  Settings in the sidebar. Click it to reveal **Update**, then click **Update**
+  to start the download.
+- The sidebar shows download percentage from Sparkle's received bytes, then
+  **Installing**. Sparkle verifies the archive, installs it, and relaunches
+  Spoken. Errors and permission prompts continue to use Sparkle's standard
+  dialogs.
+- Scheduled update checks no longer interrupt work with a modal alert. The
+  menu command **Spoken → Check for Updates…** remains available.
+
+## Installation and current update
+
+Existing installs on Test Build 9 or newer can update directly to Build 12
+through **Spoken → Check for Updates…**. The first update uses the standard
+Sparkle window because the older installed app does not yet contain the new
+sidebar control. The sidebar control becomes available for subsequent updates.
+
+For a new installation, open the DMG, drag **Spoken** to **Applications**,
+eject the DMG, then open Spoken from **Applications**. Keep only that installed
+copy running. This invited test build is ad-hoc signed and not notarized;
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch and may ask for permissions again when replacing an older ad-hoc
+signed build.
+
+Builds 8 and older use a pre-library data format this build does not import.
+They are excluded from this in-app update and should keep their data and older
+installation until a migration is available. This is still an unsigned alpha
+test build for Apple Silicon Macs, not the supported notarized release.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.1.0-alpha.1-test.12/Spoken-0.1.0-alpha.1-build.12-arm64-UNSIGNED.dmg" length="12908948" type="application/octet-stream" sparkle:edSignature="OGrNmFiQZkkPzB8UWszbt6IlXEgf2X1nVpxxuAu2IxwTv2kURl0p+kMmjsH/OU61/HMvCWyjSOJAJOnWvBgICA=="/>
+        </item>
+        <item>
+            <title>0.1.0</title>
             <pubDate>Thu, 17 Sep 2026 23:05:17 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.11</link>
             <sparkle:channel>alpha</sparkle:channel>
