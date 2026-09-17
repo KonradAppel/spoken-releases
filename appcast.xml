@@ -4,6 +4,70 @@
         <title>Spoken</title>
         <item>
             <title>0.1.0</title>
+            <pubDate>Thu, 17 Sep 2026 23:05:17 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.11</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.1.0 Alpha 1 — Test Build 11
+
+Test Build 11 replaces Test Build 10 for new testers. It contains the first-run,
+model setup, and Notch contrast fixes from Build 10, plus a clearer installer.
+
+## What changed
+
+- The DMG opens as a familiar drag-to-Applications Finder window: large Spoken
+  and Applications icons, an arrow, and English instructions. License and
+  release documents remain inside the disk image but do not crowd the window.
+- The Notch recording panel keeps its labels and controls legible in Light
+  appearance.
+- The screen-recording permission step closes the current Spoken process and
+  asks you to reopen the installed app. It no longer creates a second process.
+  Only the app needs to restart, not the Mac.
+- The built-in speech model starts downloading after permission setup, so the
+  app restart cannot interrupt it. Setup displays download or preparation
+  progress and no longer loads the model into memory just to complete setup.
+
+## Installation
+
+1. Quit every running Spoken copy. Open the DMG, drag **Spoken** to
+   **Applications**, and replace an older test build if macOS asks. Your
+   existing Spoken Library remains in place.
+2. Eject the DMG. Open Spoken from **Applications**, not from the mounted disk
+   image. Keep only this installed copy running.
+3. This invited test build is ad-hoc signed and not notarized. After the first
+   launch attempt, macOS may require **System Settings → Privacy & Security →
+   Open Anyway**. It may ask for permissions again when replacing an older
+   ad-hoc signed build.
+4. Follow setup. The built-in speech model downloads on first installation;
+   time depends on the network and Mac. Dictation and meeting transcription
+   then run locally.
+
+This build is for Apple Silicon Macs. Installs on Test Build 9 or newer can
+receive it through Spoken's in-app updater; open **Spoken → Check for Updates…**
+to check immediately. The standard Sparkle update window offers the download
+and restart. A manual DMG download remains available.
+
+Builds 8 and older used the pre-library data format, which this build does not
+import. They are excluded from this in-app update and should keep their data
+and older installation until an explicit migration is available. The supported
+alpha still requires Developer ID signing, notarization, and second-device
+validation.
+
+## Verification
+
+The Swift suite passed 415 tests with two skipped and no failures for the
+Build 10 app fixes. The Build 11 archive passed the release binary check,
+strict code-signature verification, checksum validation, and Finder inspection
+of the compressed DMG.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.1.0-alpha.1-test.11/Spoken-0.1.0-alpha.1-build.11-arm64-UNSIGNED.dmg" length="12896286" type="application/octet-stream" sparkle:edSignature="6kKE5vBa9dfLLXc9gmsNRivVoIoN5QBzGb3wAg/xXZJCfkilrh7ZklWOc+XdJZCn7egc6OuxlXzal2begzgdDA=="/>
+        </item>
+        <item>
+            <title>0.1.0</title>
             <pubDate>Wed, 12 Aug 2026 16:27:51 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.5</link>
             <sparkle:channel>alpha</sparkle:channel>
