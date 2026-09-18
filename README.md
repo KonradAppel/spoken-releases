@@ -2,7 +2,7 @@
 
 Official downloadable macOS builds and the Sparkle update feed for Spoken.
 
-[Download the latest test build](https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.3)
+[Download the latest test build](https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.13)
 
 ## Install
 
@@ -10,6 +10,7 @@ Official downloadable macOS builds and the Sparkle update feed for Spoken.
    [Releases](https://github.com/KonradAppel/spoken-releases/releases).
 2. Download the `.dmg`.
 3. Drag `Spoken.app` into `Applications`.
+4. Eject the disk image and open Spoken from Applications.
 
 Current test builds are intended for Apple Silicon Macs and are not notarized.
 Follow the warning and installation notes on the individual release page.

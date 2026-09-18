@@ -4,6 +4,74 @@
         <title>Spoken</title>
         <item>
             <title>0.1.0</title>
+            <pubDate>Fri, 18 Sep 2026 15:37:31 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.13</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.1.0 Alpha 1 — Test Build 13
+
+This invited alpha test build brings the redesigned transcript workbench and
+protects edits across closing and restarting the app.
+
+## What's new
+
+- New adaptive black-and-white app icon and matching menu-bar symbols for
+  ready, recording, paused, and processing states. The running app and About
+  panel follow the system light/dark appearance automatically.
+
+- Open documents in tabs and arrange them in two resizable views. Transcript
+  playback and speaker controls use a more compact toolbar; meetings show
+  transcripts, output documents, and images in the sidebar.
+- Share documents through the native macOS Share menu. Markdown and meeting
+  exports remain available in document actions. Copy, Share, and Markdown
+  export use the visible draft while editing.
+- A blue tab dot marks unsaved edits. Command-S saves; closing a dirty tab,
+  window, or the app offers Save, Discard Changes, and Cancel. Failed saves
+  keep your draft open, and regeneration cannot overwrite newer saved work.
+- Tabs and split layouts reopen after restart. Unsaved document and transcript
+  drafts have private local recovery copies, separate from saved revisions.
+- Project Privacy is available in each project's actions menu. Protected
+  folders carry a lock badge and explain which agent profiles may read them.
+  This controls MCP access, not library encryption or copies you share/export.
+- The sidebar Update action can accept an already discovered update directly.
+  The app also refuses to quit for an update while recording or finalizing
+  dictation; finish the capture and then retry the restart.
+
+## Installation and compatibility
+
+Builds 9 and newer may update through **Spoken → Check for Updates…**.
+Build 12's scheduled-update sidebar may still open the standard Sparkle window
+for this upgrade; proceed there. The corrected sidebar flow is included in
+Build 13 for future upgrades.
+
+For a fresh installation, open the DMG, drag **Spoken** to **Applications**,
+eject the DMG, and open the installed app. This Apple Silicon test build is
+ad-hoc signed and **not notarized**. macOS may require **System Settings →
+Privacy & Security → Open Anyway**, and permissions may need to be granted again.
+
+Builds 8 and older use a pre-library format that this version does not import.
+They are excluded from the update feed. Keep that installation and its data.
+
+## Remaining alpha limitations
+
+- Draft recovery follows a short 600 ms debounce; abrupt termination can lose
+  the latest edits within that interval. Playback and reading positions are
+  not restored.
+- A recovered draft in another project may need to be opened and reviewed
+  before Save All can finish. Conflicts keep the draft rather than overwriting.
+- Cross-device update/install acceptance and native tab dragging still need
+  additional testing. The menu-bar download badge is not part of this build.
+
+This is an invited test pre-release, not the supported notarized alpha release.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.1.0-alpha.1-test.13/Spoken-0.1.0-alpha.1-build.13-arm64-UNSIGNED.dmg" length="14054906" type="application/octet-stream" sparkle:edSignature="YBvNVw8sK8YS+5MYFyxWH9yZr0oIfYsAw/VuXwK2ajYjYupf9JgNwjZ4XiYZK/V7Ycsp7XwzPlz8VGysExMLAg=="/>
+        </item>
+        <item>
+            <title>0.1.0</title>
             <pubDate>Thu, 17 Sep 2026 23:51:46 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.12</link>
             <sparkle:channel>alpha</sparkle:channel>
