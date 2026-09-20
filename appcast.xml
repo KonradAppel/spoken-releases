@@ -3,6 +3,65 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Sun, 20 Sep 2026 22:21:11 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.1-alpha.1-test.15</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.1 — Test Build 15
+
+A security and reliability update for the Spoken 0.2 workbench.
+
+## Changes
+
+- Secured Markdown and diagram rendering against injected scripts and unwanted
+  network requests. Diagrams, timestamp links and native document actions
+  remain available.
+- Kept the original dictation when text cleanup fails. Retry Cleanup uses the
+  same captured text; Insert Raw explicitly inserts the original transcript.
+  Recovery updates the existing history entry rather than creating duplicates.
+- Fixed **Spoken beenden** in the screen-recording permission step: the wizard
+  closes before the normal app quit request. Recording and unsaved-document
+  protections remain active; forced termination is not used.
+- Added Back navigation in setup and an explicit already-allowed permission
+  screen when reviewing previous steps. Visible permission screens refresh
+  their status while Spoken is active.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
+when it appears. Download, install and allow Spoken to restart. The installed
+version afterwards should be **0.2.1 (15)**. Finish any recording or dictation
+before installing, and save pending document edits when asked.
+
+Builds 9 and newer can receive this update. Existing library content is
+preserved. Older pre-library builds remain excluded from this update channel.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. Requires an
+Apple Silicon Mac; macOS 15 or newer is the supported test target.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. Permissions may need to be granted again. In-app update archives
+are authenticated with Sparkle's EdDSA signature.
+
+## Validation and limitations
+
+The automated regression suite and packaged artifact are checked before
+publication. The real update from 0.2.0 on the second Mac remains a user
+acceptance test. This patch does not add speech providers or change library
+storage. The library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.1-alpha.1-test.15/Spoken-0.2.1-alpha.1-build.15-arm64-UNSIGNED.dmg" length="14039180" type="application/octet-stream" sparkle:edSignature="AT8LEGH4FXYQXzrDr59kJiXKV8tCUr9VhiJ+J+s8WUu+6o5mBV6/Yd4Wn/fJy+gMTH5rmjGWYms4XlnLM7LhAQ=="/>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Sun, 20 Sep 2026 21:34:53 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.0-alpha.1-test.14</link>
