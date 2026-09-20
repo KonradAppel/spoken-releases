@@ -2,7 +2,7 @@
 
 Official downloadable macOS builds and the Sparkle update feed for Spoken.
 
-[Download the latest test build](https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.13)
+[Download Spoken 0.2.0 (Build 14)](https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.0-alpha.1-test.14/Spoken-0.2.0-alpha.1-build.14-arm64-UNSIGNED.dmg)
 
 ## Install
 
@@ -17,7 +17,7 @@ Follow the warning and installation notes on the individual release page.
 
 ## Updates
 
-Updater-capable builds use the public `appcast.xml` in this repository. In
+Library-based builds 9 and newer use the public `appcast.xml` in this repository. In
 Spoken, choose **Spoken → Check for Updates…**. Downloaded updates are
 authenticated with Sparkle's EdDSA signature before installation.
 

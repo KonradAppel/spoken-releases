@@ -3,6 +3,72 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Sun, 20 Sep 2026 21:34:53 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.0-alpha.1-test.14</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.0 — Test Build 14
+
+A refined workbench, reliable document splitting, and a compact menu bar.
+This is an Apple Silicon test pre-release. The app reports version **0.2.0 (14)**.
+
+## What's new
+
+- Drag Summary, Action Items, transcripts and other document tabs into either
+  half of a view to arrange them side by side. Moving tabs preserves document
+  sessions and unsaved edits. The whole tab is clickable and draggable.
+- Consistent toolbar hover and pressed feedback for Info, Share, document
+  actions, split controls and tab close buttons. Sharing continues to use the
+  native macOS share picker and includes the visible draft.
+- A simpler meeting start screen with recording and audio import actions.
+  Recording controls in the main window include pause, resume and stop.
+- A compact menu bar with recording, Copy Last Dictation, and one Dictation
+  Options submenu. Active processing and provider warnings stay accessible.
+- Dictation and meeting transcription use built-in FluidAudio speech models;
+  legacy oMLX audio selections fall back to the built-in provider. Configured
+  text and vision providers remain available for cleanup and workflows.
+- Refined native Icon Composer artwork and a more compact dictation overlay.
+  On macOS 26, icon appearance follows the system's icon appearance setting.
+
+## Update an existing installation
+
+**Builds 9 and newer:** open Spoken and choose **Check for Updates…** from the
+Spoken menu, or use the update action when it appears in the sidebar. Download
+and install the update, then let Spoken restart. Finish any active recording
+or dictation before restarting. Existing library content is preserved.
+
+Older builds may use the standard Sparkle update window for this upgrade.
+Builds 8 and older use an unsupported pre-library storage format and are
+excluded from this update. Keep those installations and their data intact.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. The download contains the release app, not Spoken Dev.
+Requires an Apple Silicon Mac; macOS 15 or newer is the supported test target.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. Microphone, accessibility or screen-recording permissions may
+need to be granted again. The in-app update archive is authenticated with
+Sparkle's EdDSA signature.
+
+## Known limitations
+
+- Cross-device installation and update acceptance still require tester feedback.
+- The menu-bar download badge, expanded speech-model catalog, and UI
+  localization are not included in this build.
+- The Spoken Library is local but not encrypted. Project Privacy restricts
+  agent access; it does not encrypt files or protect exported copies.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.0-alpha.1-test.14/Spoken-0.2.0-alpha.1-build.14-arm64-UNSIGNED.dmg" length="14027818" type="application/octet-stream" sparkle:edSignature="qmms1hJgqBSoE+m4VoZGvB/pHZaRzqyJ1ufNvkpFVRzW6Wzn5My+fC3rmKc0oexiesFcuJmo/eyVmksyVRLzDQ=="/>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Fri, 18 Sep 2026 15:37:31 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.1.0-alpha.1-test.13</link>
