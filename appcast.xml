@@ -3,6 +3,72 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.3</title>
+            <pubDate>Thu, 24 Sep 2026 22:46:28 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.3-alpha.1-test.17</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.3 — Test Build 17
+
+Own dictation modes, a project page and one place for everything that needs
+attention.
+
+## Changes
+
+- **Your own dictation modes.** Settings › Dictation › Modes lists Raw and your
+  modes. Create, rename, edit and delete them; each can use its own provider
+  and model, and **Test** runs a mode on a spoken sample without inserting
+  anything. Clean and Concise keep your prompts, **To English** is new, and
+  Structured is gone (a shortcut that used it switches to Raw). The dictation
+  history shows which mode each entry used.
+- **Project page.** Clicking a project shows two cards: its **About** text,
+  written in Markdown and shown formatted, and its **flows** as a graph. It
+  fits a split view too. Each result says whether its document
+  exists for the chosen meeting: click to open it, or to create it. The
+  sidebar lists only the meetings under a project, and new projects ask what
+  they are about instead of creating a README. Agents see the About text.
+- **Needs attention.** A bell at the top right of the window lists what is
+  misconfigured — a flow using a deleted provider, a provider that can't be
+  reached, a dictation mode that can't run — and each entry jumps to where it
+  is fixed. The menu bar shows "… need attention" only when something does.
+- **Flows.** After a meeting every flow of the project is offered; "Preselect
+  after meetings" decides which start checked. The flow editor names its
+  default model and lists a provider's models as soon as it is picked.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
+when it appears. Download, install and allow Spoken to restart. The installed
+version afterwards should be **0.2.3 (17)**. Finish any recording or dictation
+before installing, and save pending document edits when asked.
+
+Builds 9 and newer can receive this update. Existing library content is
+preserved. Older pre-library builds remain excluded from this update channel.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. Requires an
+Apple Silicon Mac; macOS 15 or newer is the supported test target.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. Permissions may need to be granted again. In-app update archives
+are authenticated with Sparkle's EdDSA signature.
+
+## Validation and limitations
+
+The automated regression suite and packaged artifact are checked before
+publication. The real update from 0.2.2 on the second Mac remains a user
+acceptance test. The library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.3-alpha.1-test.17/Spoken-0.2.3-alpha.1-build.17-arm64-UNSIGNED.dmg" length="14274950" type="application/octet-stream" sparkle:edSignature="PSa3rbeb3Bz+NfnaFczKvWIm5wtg9OYiBCZ0FuK5F8MGCakE/3WUp0E+0c8TEca7jNTfSiwpwlehJYe683rrCA=="/>
+        </item>
+        <item>
             <title>0.2.2</title>
             <pubDate>Thu, 24 Sep 2026 16:34:18 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.2-alpha.1-test.16</link>
