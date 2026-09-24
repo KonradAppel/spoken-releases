@@ -3,6 +3,72 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.2</title>
+            <pubDate>Thu, 24 Sep 2026 16:34:18 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.2-alpha.1-test.16</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.2 — Test Build 16
+
+A setup, dictation and agent update for the Spoken 0.2 workbench.
+
+## Changes
+
+- New first-launch setup in four steps in the main window: permissions in one
+  list with explanations, the built-in speech model, a first dictation from the
+  menu bar, and a summary. A Get Started checklist in the sidebar covers the
+  optional next steps: connect an agent, record a meeting, add text and
+  screenshot models.
+- Added **Exxperts** as an agent client. Spoken writes its connector with the
+  profile's key directly into Exxperts' MCP configuration, never through the
+  clipboard.
+- Clean, Concise and Structured no longer lose a dictation when no text
+  provider is set up or the provider fails. The raw text is inserted and an
+  orange notice says why, with a button to the provider settings. Cleanup gives
+  up after 60 seconds without any response instead of ten minutes, and
+  cancelling keeps the dictation and its audio in the history.
+- Dictation errors and the transcript preview grow out of the notch instead of
+  hiding behind it.
+- The speech model starts loading as soon as a dictation starts, so the first
+  dictation after a pause is faster.
+- A tidier menu bar menu: meeting recording on its own, then the last
+  dictation, Dictation Mode and Dictation Options. "Nothing heard" explains how
+  the shortcut works.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
+when it appears. Download, install and allow Spoken to restart. The installed
+version afterwards should be **0.2.2 (16)**. Finish any recording or dictation
+before installing, and save pending document edits when asked.
+
+Builds 9 and newer can receive this update. Existing library content is
+preserved. Older pre-library builds remain excluded from this update channel.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. Requires an
+Apple Silicon Mac; macOS 15 or newer is the supported test target.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. Permissions may need to be granted again. In-app update archives
+are authenticated with Sparkle's EdDSA signature.
+
+## Validation and limitations
+
+The automated regression suite and packaged artifact are checked before
+publication. The real update from 0.2.1 on the second Mac remains a user
+acceptance test. The library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.2-alpha.1-test.16/Spoken-0.2.2-alpha.1-build.16-arm64-UNSIGNED.dmg" length="14150092" type="application/octet-stream" sparkle:edSignature="/psd7vuyDTlDi3XnuwoemzbFBoFw1joTwIqj+0ONFolSG9yJsmBJ0SGKTUaitZgWUFion8pKjNCtirxQQdRcDQ=="/>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Sun, 20 Sep 2026 22:21:11 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.1-alpha.1-test.15</link>
