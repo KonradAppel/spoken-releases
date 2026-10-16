@@ -3,6 +3,77 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.5</title>
+            <pubDate>Fri, 16 Oct 2026 23:42:57 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.5-alpha.1-test.19</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.5 — Test Build 19
+
+Optional OpenAI API transcription, clearer model lists, and visible meeting
+processing steps.
+
+## Changes
+
+- **Optional speech API.** Add an OpenAI connection in Settings › Models &
+  Providers with your own API key, then choose it separately for Dictation or
+  Meetings. Built-in Parakeet remains the default and needs no API account.
+  Spoken labels the processing location before audio is sent. Cloud use is
+  explicit; sensitive projects require a separate allowance.
+- **Meeting models.** `whisper-1` can return word timestamps for local speaker
+  matching. Text-only transcription models such as `gpt-transcribe` are offered
+  for dictation, not for meetings. Spoken retains the original meeting audio if
+  transcription fails.
+- **Stable route and provenance.** A meeting stores the exact provider profile
+  and model used. If the selected connection, model, or sensitive-project
+  permission changes during a long job, Spoken stops before another audio
+  chunk is uploaded; retry after checking the settings.
+- **Provider models.** Search and filter a provider's reported models by text,
+  vision, transcription, speech, image, embeddings, or enabled state. The list
+  distinguishes reported facts, shared-list information, and name guesses.
+  Its menu can set capabilities for an unusual model and control sensitive
+  project access.
+- **Meeting progress.** The processing panel shows the current step, progress,
+  and route. Failed transcription no longer loops into speaker review.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.5 (19)**.
+Finish any recording or dictation first, and save pending document edits when
+asked. Existing provider and library settings remain in place; this build does
+not add a library migration.
+
+Builds 9 and newer can receive this update. Older pre-library builds remain
+excluded from this update channel. OpenAI is optional and requires your own
+API key; Spoken does not use a ChatGPT account sign-in.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. Permissions may need to be granted again. In-app update archives
+are authenticated with Sparkle's EdDSA signature.
+
+## Validation and limitations
+
+The automated regression suite and packaged artifact are checked before
+publication. One consented synthetic German meeting sample was transcribed
+through OpenAI `whisper-1`; it does not establish quality or cost for long
+meetings. The full curated audio model catalog and broader evaluation remain
+follow-up work. The Spoken Library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.5-alpha.1-test.19/Spoken-0.2.5-alpha.1-build.19-arm64-UNSIGNED.dmg" length="14556914" type="application/octet-stream" sparkle:edSignature="UYDS6yNUKvCFHKgg1EwNhubkpA9ey89C6Wgtkh1zB9RMYRA/v0nR0MA0sYYUkvgGD6mAwKjwGXe2qi2Pa2u3Aw=="/>
+        </item>
+        <item>
             <title>0.2.4</title>
             <pubDate>Fri, 25 Sep 2026 16:00:35 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.4-alpha.1-test.18</link>
