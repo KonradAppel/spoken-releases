@@ -3,6 +3,97 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.6</title>
+            <pubDate>Sat, 24 Oct 2026 12:22:39 +0200</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.6-alpha.1-test.20</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.6 — Test Build 20
+
+A smooth notch overlay, area screenshots, calendar suggestions and more
+on-device models.
+
+## Changes
+
+- **Smooth notch overlay.** Meeting recording, dictation and the standby hint
+  grow out of the notch as one shape and shrink back into it. Hovering opens
+  the compact view, a click opens the controls. Two causes of stutter were
+  measured and removed: the recording state was republished for every audio
+  buffer, and the menu bar menu asked macOS about Apple Intelligence on every
+  redraw.
+- **Area screenshots.** During a meeting, ⌥⇧A (or the dashed-square button in
+  the overlay) opens the macOS selection: drag an area, press Space to pick a
+  window, Escape cancels. ⌥⇧S still captures the whole screen. Both shortcuts
+  are on by default and can be changed in Settings › Shortcuts. Closing the
+  note card with X or Escape now discards that screenshot; "Ohne Notiz" keeps
+  it.
+- **Calendar suggestions.** In Settings › Meetings › Calendar, allow access
+  and choose the calendars to use. When a recording starts, Spoken proposes
+  the title and invitees of the current or next calendar event; you can pick
+  another event or edit both. Spoken only reads calendars added to macOS.
+- **On-device models.** More built-in speech models are available under
+  Models & Providers, including Apple Speech for a fixed language. Apple's
+  on-device text model can clean up short dictations; meeting summaries still
+  need a text provider.
+- **Agents.** Per agent, you can allow setting changes and project creation.
+  Every request is shown in Spoken for your approval.
+- **Fixes.** Discarding a new recording moves its meeting to the Trash
+  instead of leaving it empty. Settings buttons in the recording overlay open
+  Settings even when the main window is closed.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.6 (20)**.
+Finish any recording or dictation first.
+
+### If something stops working after the update
+
+This test build is ad-hoc signed, like the earlier ones. macOS ties privacy
+permissions to an app's signature, so after an update it can treat Spoken as
+a new app:
+
+- **macOS asks again** for Microphone, Screen & System Audio Recording or
+  Accessibility: allow it.
+- **Dictation records nothing, text is not inserted, or system audio is
+  silent**, although Spoken is still listed as allowed: open **System
+  Settings → Privacy & Security**, select the affected section (Microphone,
+  Screen & System Audio Recording, Accessibility), remove **Spoken** with
+  "–", then open Spoken and allow it again. Spoken › Settings › Permissions
+  shows which permission is missing.
+
+Builds signed with a Developer ID will keep these permissions across updates.
+
+The library is migrated once on first launch to store calendar context with
+meetings. Builds 9 and newer can receive this update.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. In-app update archives are authenticated with Sparkle's EdDSA
+signature.
+
+## Validation and limitations
+
+The automated regression suite and the packaged artifact are checked before
+publication. Overlay smoothness, area screenshots, calendar suggestions and an
+approved agent setting change were checked on the reference Mac. Known open
+items: an echo of the other side can appear in the microphone track when a
+call plays through speakers (KON-226); marking up screenshots in a call is not
+available yet (KON-241). The Spoken Library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.6-alpha.1-test.20/Spoken-0.2.6-alpha.1-build.20-arm64-UNSIGNED.dmg" length="23401960" type="application/octet-stream" sparkle:edSignature="dTGKIhB9jRiemFNatM1MYLUW5/yhy5dkbeOrTlr7xMBa+obAuW8qkX0pk90r76cAN61T8KOOyfigkYMP5oXdCQ=="/>
+        </item>
+        <item>
             <title>0.2.5</title>
             <pubDate>Fri, 16 Oct 2026 23:42:57 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.5-alpha.1-test.19</link>
