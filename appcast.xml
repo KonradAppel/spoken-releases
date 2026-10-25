@@ -3,6 +3,94 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.7</title>
+            <pubDate>Sun, 25 Oct 2026 08:12:51 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.7-alpha.1-test.21</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.7 — Test Build 21
+
+Cleaner meeting transcripts, echo removal and cheaper cloud transcription.
+
+## Changes
+
+- **Whole sentences per speaker.** Words from the microphone and the system
+  audio were interleaved by time, so a short "yes" from the other side cut a
+  sentence into one-word lines. Each person's sentence now stays together.
+  Existing meetings improve when they are transcribed or their speakers
+  detected again.
+- **Echo removal.** When a call plays through speakers, the other side's
+  voice is removed from the microphone track before speakers are detected
+  and the audio is transcribed. Spoken mutes only short blocks that repeat
+  the system audio and keeps blocks where you talk at the same time. The
+  recording itself never changes. With headphones nothing changes.
+- **Cloud transcription with separate tracks.** A provider on the internet,
+  such as OpenAI or Groq, receives microphone and system audio as separate
+  tracks, and only the speech of each, as compressed M4A: about 14 MB per hour
+  of speech instead of 230 MB. Two tracks no longer cost twice the meeting.
+  Servers on this Mac or your network still receive WAV.
+- **Transcript information.** The (i) button on a transcript shows the
+  provider, whether it ran on this Mac or in the cloud, the model, the
+  language and the speakers per track.
+- **Fixes.** Codex connects to the Spoken MCP server again. A failed
+  re-transcription, for example when a provider has no credits left, can be
+  dismissed with "Verwerfen"; the earlier transcript stays. The speaker review
+  keeps its "Weiter" button visible.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.7 (21)**.
+Finish any recording or dictation first.
+
+### If something stops working after the update
+
+This test build is ad-hoc signed, like the earlier ones. macOS ties privacy
+permissions to an app's signature, so after an update it can treat Spoken as
+a new app:
+
+- **macOS asks again** for Microphone, Screen & System Audio Recording or
+  Accessibility: allow it.
+- **Dictation records nothing, text is not inserted, or system audio is
+  silent**, although Spoken is still listed as allowed: open **System
+  Settings → Privacy & Security**, select the affected section (Microphone,
+  Screen & System Audio Recording, Accessibility), remove **Spoken** with
+  "–", then open Spoken and allow it again. Spoken › Settings › Permissions
+  shows which permission is missing.
+
+Builds signed with a Developer ID will keep these permissions across updates.
+
+The library format is unchanged. Builds 9 and newer can receive this update.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. In-app update archives are authenticated with Sparkle's EdDSA
+signature.
+
+## Validation and limitations
+
+The automated regression suite and the packaged artifact are checked before
+publication. Re-transcription with whole sentences, cloud transcription
+through Groq, the speaker review and the transcript information were checked
+on the reference Mac. Echo removal was measured on recorded speaker calls.
+Cloud transcription through OpenAI itself was not run for this build. Known
+open items: the speaker review can show a wrong speaker count (KON-224) and
+be slow on long meetings (KON-205); marking up screenshots in a call is not
+available yet (KON-241). The Spoken Library remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.7-alpha.1-test.21/Spoken-0.2.7-alpha.1-build.21-arm64-UNSIGNED.dmg" length="23416926" type="application/octet-stream" sparkle:edSignature="HVMe2tf739rgu2Fl6k2QEIGKd/EWsS+c/b0p+5UmZAAZSjQIwpp9oixc6KC35hhitdKBcYij0R7tbDO9+rvYCw=="/>
+        </item>
+        <item>
             <title>0.2.6</title>
             <pubDate>Sat, 24 Oct 2026 12:22:39 +0200</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.6-alpha.1-test.20</link>
