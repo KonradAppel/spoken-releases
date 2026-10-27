@@ -3,6 +3,80 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.9</title>
+            <pubDate>Tue, 27 Oct 2026 16:50:00 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.9-alpha.1-test.23</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.9 — Test Build 23
+
+A small fix release: MP4 recordings can be imported, outdated models are
+reported, and agents use far less context through Spoken's MCP server.
+
+## Changes
+
+- **MP4 import.** MP4 files (for example Teams or Zoom recordings) can be
+  imported as meeting audio. Spoken uses only the audio track.
+- **Outdated models.** When a connection no longer offers a chosen model,
+  dictation modes and text workflows say "Model … is not offered" with
+  Choose Model, and the bell lists it.
+- **Agents.** The Spoken MCP server answers in smaller parts: short
+  connection instructions, long texts in parts of about 8,000 characters,
+  and shorter default lists.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.9 (23)**.
+Finish any recording or dictation first.
+
+### If something stops working after the update
+
+This test build is ad-hoc signed, like the earlier ones. macOS ties privacy
+permissions to an app's signature, so after an update it can treat Spoken as
+a new app:
+
+- **macOS asks again** for Microphone, Screen & System Audio Recording,
+  Accessibility or Calendar: allow it.
+- **Dictation records nothing, text is not inserted, or system audio is
+  silent**, although Spoken is still listed as allowed: open **System
+  Settings → Privacy & Security**, select the affected section (Microphone,
+  Screen & System Audio Recording, Accessibility), remove **Spoken** with
+  "–", then open Spoken and allow it again. Spoken › Settings › Permissions
+  shows which permission is missing.
+
+Builds signed with a Developer ID will keep these permissions across updates.
+
+The library format is unchanged. Builds 9 and newer can receive this update.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. In-app update archives are authenticated with Sparkle's EdDSA
+signature.
+
+## Validation and limitations
+
+The automated regression suite and the packaged artifact are checked before
+publication. MP4 import was checked with audio-only and video MP4 files, and
+the MCP response sizes were measured on the reference Mac. Known open items:
+calendars cannot yet be disconnected in Settings (KON-254), floating glass
+panels are hard to read on Macs without a notch (KON-255), and Models &
+Providers clips its details in a narrow window (KON-256). The Spoken Library
+remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.9-alpha.1-test.23/Spoken-0.2.9-alpha.1-build.23-arm64-UNSIGNED.dmg" length="23659602" type="application/octet-stream" sparkle:edSignature="KEhdMdfiov3XEAb5FILt/eKHWNmE0L+BtithC0eHWi1uje+2yTRhIf2pIt4maII+xK0WZ3/focENXr1XJn1fCg=="/>
+        </item>
+        <item>
             <title>0.2.8</title>
             <pubDate>Tue, 27 Oct 2026 15:16:29 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.8-alpha.1-test.22</link>
