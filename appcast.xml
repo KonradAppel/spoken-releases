@@ -3,6 +3,101 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.8</title>
+            <pubDate>Tue, 27 Oct 2026 15:16:29 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.8-alpha.1-test.22</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.8 — Test Build 22
+
+A new look, a calmer notch, a floating transcript player, calendar meetings
+that offer to record, and reliable echo removal on speaker calls.
+
+## Changes
+
+- **New design.** Spoken is now black and white, dark first, with an accent
+  you choose in Settings › General › Appearance (none, a preset or your own
+  color) and System, Light or Dark appearance. Buttons follow one clear order
+  of importance instead of the system blue everywhere.
+- **Notch.** Dictation opens one compact panel: time beside the notch, the
+  target app, a wave and the mode below. Meetings show their header beside
+  the notch and the content below it; the small recording indicator sits
+  right next to the notch. Screenshot notes and the "Still in the meeting?"
+  reminder appear inside the recording.
+- **Microphones.** Dictation and meetings each have their own microphone
+  choice, both "Like macOS" by default. Virtual inputs of meeting apps such
+  as Teams or Zoom are no longer offered.
+- **Calendar.** Settings › Meetings › Calendar shows your calendars grouped by
+  account and the meetings of each day. When a meeting with other people
+  starts, Spoken opens New Meeting with that event chosen; nothing records
+  until you press Start. The event is picked from a calendar button inside
+  the title field, and invited people show as "First Last".
+- **Transcript.** A floating player at the bottom with a zoomable speaker
+  timeline: pinch to zoom, swipe to move, click to jump. A pencil edits one
+  passage in place; the speaker name reassigns one passage, with Undo.
+- **Speaker calls.** When a call plays through the Mac's speakers, the other
+  side's echo is removed from your microphone far more reliably, and playback
+  no longer amplifies it into a hall. Older meetings improve after
+  "Speaker neu erkennen" or a new transcription.
+- **Fixes.** Very quiet microphones are no longer treated as silence. Settings
+  hover no longer flashes, and choice fields keep their arrows at the right
+  edge.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.8 (22)**.
+Finish any recording or dictation first.
+
+### If something stops working after the update
+
+This test build is ad-hoc signed, like the earlier ones. macOS ties privacy
+permissions to an app's signature, so after an update it can treat Spoken as
+a new app:
+
+- **macOS asks again** for Microphone, Screen & System Audio Recording,
+  Accessibility or Calendar: allow it.
+- **Dictation records nothing, text is not inserted, or system audio is
+  silent**, although Spoken is still listed as allowed: open **System
+  Settings → Privacy & Security**, select the affected section (Microphone,
+  Screen & System Audio Recording, Accessibility), remove **Spoken** with
+  "–", then open Spoken and allow it again. Spoken › Settings › Permissions
+  shows which permission is missing.
+
+Builds signed with a Developer ID will keep these permissions across updates.
+
+The library format is unchanged. Builds 9 and newer can receive this update.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer.
+
+This test build is **ad-hoc signed, not Developer ID signed or notarized**.
+macOS may require **System Settings → Privacy & Security → Open Anyway** on
+first launch. In-app update archives are authenticated with Sparkle's EdDSA
+signature.
+
+## Validation and limitations
+
+The automated regression suite and the packaged artifact are checked before
+publication. The new design, notch panels, microphone choice, calendar
+settings and meeting offer, transcript player and echo removal were checked
+on the reference Mac; echo removal was measured on a recorded Teams call on
+speakers. Known open items: the panel after a meeting does not yet have the
+new design everywhere (KON-247); live waves move little with a quiet MacBook
+microphone and show the other side on speaker calls (KON-251, KON-253);
+attendees cannot yet be sorted by their answer (KON-252). The Spoken Library
+remains local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.8-alpha.1-test.22/Spoken-0.2.8-alpha.1-build.22-arm64-UNSIGNED.dmg" length="23655632" type="application/octet-stream" sparkle:edSignature="hoVeGb03fSkqa00Lvj1VaD/ix+lUvEkAGk/wqJDepA3s4M/dECEpnluDk9vaD/1de7e6CRlD0QWRhfPMUurpBA=="/>
+        </item>
+        <item>
             <title>0.2.7</title>
             <pubDate>Sun, 25 Oct 2026 08:12:51 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.7-alpha.1-test.21</link>
