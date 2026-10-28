@@ -3,6 +3,90 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.10</title>
+            <pubDate>Wed, 28 Oct 2026 09:59:20 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.10-alpha.1-test.24</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.10 — Test Build 24
+
+The first test build signed with a Developer ID and notarized by Apple.
+From the next update on, macOS keeps Spoken's permissions and keychain access.
+Agents can now change your library after your approval, and floating panels are
+easier to read without a notch.
+
+## Changes
+
+- **Signed and notarized.** macOS opens Spoken without "Open Anyway" and
+  recognises later updates as the same app, so Microphone, Screen & System
+  Audio Recording, Accessibility and keychain access stay allowed.
+- **Keychain.** API keys and agent connection keys are stored under "Spoken".
+  Existing keys move over by themselves.
+- **Agents can change the library.** Through the MCP tool `library.apply` an
+  agent can create projects, rename projects and meetings, update the About
+  text, move meetings and move items to or from the Trash. Spoken shows the
+  whole batch once for your approval and applies all of it or nothing. Nothing
+  can be deleted permanently, and an agent cannot empty the Trash.
+- **Agent permissions.** Settings › Agents has one switch "Allow library
+  changes" with a checkbox per kind of change. Earlier grants carry over.
+- **Readable floating panels.** Without a notch, for example on an external
+  display, panels use tinted Liquid Glass. Buttons, the speaker name field and
+  "Verwerfen" share one clear style.
+- **Calendar.** Settings › Meetings › Calendar can disconnect the calendar.
+  The macOS permission itself is removed in System Settings.
+- **Smaller agent footprint.** Spoken's MCP connection loads about 1,800
+  tokens.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.10 (24)**.
+Finish any recording or dictation first.
+
+### One last time: allow permissions again
+
+This update changes Spoken's signature from ad-hoc to Developer ID, so macOS
+treats it as a new app once more:
+
+- **macOS asks again** for Microphone, Screen & System Audio Recording,
+  Accessibility or Calendar: allow it.
+- **Keychain asks** whether Spoken may use its saved keys: choose **Always
+  Allow**.
+- **Dictation records nothing, text is not inserted, or system audio is
+  silent**, although Spoken is listed as allowed: open **System Settings →
+  Privacy & Security**, select the affected section, remove **Spoken** with
+  "–", then open Spoken and allow it again. Spoken › Settings › Permissions
+  shows which permission is missing.
+
+Later updates keep these permissions.
+
+The library format is unchanged. Builds 9 and newer can receive this update.
+
+## Fresh installation
+
+Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
+Spoken from Applications. This is the release app, not Spoken Dev. The test
+target is an Apple Silicon Mac with macOS 15 or newer. The DMG is signed with
+a Developer ID and notarized by Apple.
+
+## Validation and limitations
+
+The automated regression suite, the signature and notarization of the exact
+DMG are checked before publication. The new library changes, agent
+permissions, calendar disconnect and floating panels are covered by automated
+tests but were not yet tried by hand in the running app. The agent approval
+is still a plain macOS dialog (KON-247). Known open items: Outlook calendars
+(KON-270), Spoken in Claude Desktop and Cowork (KON-269), and Models &
+Providers clipping in a narrow window (KON-256). The Spoken Library remains
+local and unencrypted.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.10-alpha.1-test.24/Spoken-0.2.10-alpha.1-build.24-arm64.dmg" length="23942724" type="application/octet-stream" sparkle:edSignature="0NBmrMmnRukYm83TMw+5WnpCX0cbk+dOr8patVcCPFPSy76PAEJzCvFa2RsLrRSp71j7IwRE5kbMKbivlIWJAA=="/>
+        </item>
+        <item>
             <title>0.2.9</title>
             <pubDate>Tue, 27 Oct 2026 16:50:00 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.9-alpha.1-test.23</link>
