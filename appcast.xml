@@ -3,6 +3,74 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.11</title>
+            <pubDate>Thu, 29 Oct 2026 22:18:25 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.11-alpha.1-test.25</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.11 — Test Build 25
+
+A reliability release for meetings: Apple's echo reduction is always on, a
+meeting keeps recording when you switch microphones or headphones, and every
+overlay menu works over fullscreen apps.
+
+## Meetings
+
+- **Echo reduction is always on.** Meeting recordings use Apple's own voice
+  processing, the same as FaceTime, so a call played through speakers no
+  longer ends up twice in the transcript. Other apps may play slightly
+  quieter while you record.
+- **Switching devices never stops a meeting.** Connecting AirPods, unplugging
+  headphones or a call app changing the device no longer ends the recording.
+  If the microphone you chose disappears, Spoken uses the Mac's microphone
+  and switches back when yours returns. A short note in the overlay says
+  which microphone is in use.
+- **Faster start.** Starting the first meeting after launch no longer pauses
+  for several seconds.
+- **Calmer notch.** The recording capsule at the notch no longer flickers when
+  the pointer rests at its edge, and its rounded corners stay intact.
+- **Menus over fullscreen apps.** The "…" menu, the system audio menu, the
+  calendar choice and the speaker review menu open while another app is in
+  fullscreen. The project can be changed in the meeting start window.
+- **Progress beside the bell.** Transcription, speaker detection and flows of
+  your meetings show their progress in one place next to the bell, including
+  speaker proposals waiting for your decision.
+- **Correct speakers faster.** Change the speaker of one passage or of all
+  passages of that speaker at once, with Undo.
+- **Delete Audio keeps the transcript.** Removing a meeting's audio frees
+  space but keeps transcript, speakers and notes.
+
+## Reading long transcripts
+
+- Scrolling long meetings is smooth.
+- While playing, you can scroll freely; after a short pause the transcript
+  follows the playback again. Pausing no longer jumps back, and a click in the
+  timeline brings the transcript to that position.
+
+## App
+
+- **Menu bar only.** Closing the window leaves Spoken in the menu bar; Quit
+  asks first.
+- **Agent approvals** arrive as a macOS notification instead of a modal
+  window. Each agent capability can be Off, Ask or Automatic.
+- **Calendar** shows when it is not connected and can be disconnected.
+- **First launch** has a simpler setup wizard.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.11 (25)**.
+Finish any recording or dictation first.
+
+The library format is unchanged. Builds 9 and newer can receive this update.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.11-alpha.1-test.25/Spoken-0.2.11-alpha.1-build.25-arm64.dmg" length="24168758" type="application/octet-stream" sparkle:edSignature="0IVssP2+O09g8PRsA8I/U21e/HRBXgT/kOVZxkN+ltlh9hdG3uT7PQlyESatWm9tOJiOYkU1+9VT6RKLdVj5CA=="/>
+        </item>
+        <item>
             <title>0.2.10</title>
             <pubDate>Wed, 28 Oct 2026 09:59:20 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.10-alpha.1-test.24</link>
