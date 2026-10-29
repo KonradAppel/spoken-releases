@@ -2,8 +2,8 @@
 
 Official downloadable macOS builds and the Sparkle update feed for Spoken.
 
-[Download Spoken 0.2.10 (Build 24)](https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.10-alpha.1-test.24/Spoken-0.2.10-alpha.1-build.24-arm64.dmg)
-· [Release notes](https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.10-alpha.1-test.24)
+[Download Spoken 0.2.11 (Build 25)](https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.11-alpha.1-test.25/Spoken-0.2.11-alpha.1-build.25-arm64.dmg)
+· [Release notes](https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.11-alpha.1-test.25)
 
 ## Install
 
