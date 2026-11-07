@@ -3,6 +3,106 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.12</title>
+            <pubDate>Fri, 06 Nov 2026 23:35:23 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.12-alpha.1-test.26</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.12 — Test Build 26
+
+A design and workspace release: a calmer look, a transcript that reads like a
+document, fewer passages without a speaker, projects you can archive and
+arrange yourself, and Markdown documents you can edit as source.
+
+## Look and feel
+
+- **Calmer design.** Refined grays, clearer secondary text, consistent type
+  sizes, slightly taller buttons and a visible keyboard focus ring. Animations
+  respect "Reduce motion".
+- **English throughout.** Every window, overlay, alert and agent approval now
+  uses the same English wording.
+
+## Transcripts
+
+- **Reads like a document.** Passages sit in one centered column without
+  avatars or bubbles; the passage that is playing has a thin accent bar.
+- **Click to listen.** Clicking a passage plays from there.
+- **Your place stays marked.** When you scroll away during playback, a dashed
+  marker shows where you are reading; playback is not moved.
+- **Player fits narrow windows.** The floating player switches to two rows
+  when space is tight, and "Speakers" opens the speaker bands. The passage
+  that is playing always stays above the player.
+- **Speaker changes are instant.** Changing a passage's speaker shows at once
+  and is saved in the background. Speaker results always stay with their own
+  meeting.
+
+## Speakers
+
+- **Fewer passages left without a name.** Passages the speaker detection
+  could not place now go to the nearest speaker on the same audio track:
+  microphone passages only to people on the microphone, system audio only to
+  people on the system audio. They show "~ guessed" and take effect without
+  an extra review step.
+- **Your choices are protected.** Names you assigned yourself are never
+  overwritten, also when you run speaker detection or reprocess a meeting
+  again. Picking a person for a guessed passage makes it yours; Undo brings
+  the guess back.
+- **Optional voice comparison.** Settings › Meetings › Capture and speakers ›
+  "Use voice comparison for unassigned passages" compares voices first before
+  falling back to the nearest speaker. It is off by default, because it loads
+  a model and takes longer.
+- Copy, Markdown export, flows and agents get plain names without the
+  "guessed" marker.
+
+## Sidebar and projects
+
+- **Archive projects.** "Archive Project" moves a project into a collapsible
+  Archive group. Everything in it stays searchable and available to agents;
+  "Unarchive Project" brings it back.
+- **Projects stay where you put them.** Editing a project no longer moves it.
+  Drag projects to arrange them, or use Move Up/Down. Settings › General ›
+  Workspace brings back "Recently changed first".
+- **Move meetings by dragging** onto another project again.
+- **Search names or contents** with the new switch in the search field.
+- **Status dots** mark generated outputs that are outdated (orange) or failed
+  (red).
+- The open tab is highlighted in the sidebar, and the gear in the footer opens
+  Settings.
+
+## Documents
+
+- **Preview or source.** ⇧⌘E switches a Markdown document between the
+  rendered preview and its colored source. A double-click in the preview opens
+  the source at that spot. Returning to the preview saves.
+- **Project About** has one collapsible header and opens for editing with a
+  double-click.
+
+## Flows and Settings
+
+- Clearer flow labels, "Run again" only when an output exists, and a single
+  column in narrow panes.
+- The whole field of a settings picker is clickable.
+- Every switch uses the same style in your accent color, including the
+  shortcut switches.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.12 (26)**.
+Finish any recording or dictation first.
+
+The first start updates the library once: archived projects get their own
+field, and every speaker name you already assigned is marked as your own
+choice so it stays protected. This takes a few seconds, and Spoken backs up
+the library first. Builds 9 and newer can receive this update.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.12-alpha.1-test.26/Spoken-0.2.12-alpha.1-build.26-arm64.dmg" length="24605305" type="application/octet-stream" sparkle:edSignature="QTIfaTohkV/Ek8xRmQIdW2QQUX9dJ4m/aSGs1sgyedWzc2pNBaw4GK/VG1ba/4bU5ADNersF/JSLUEIAWUCfDQ=="/>
+        </item>
+        <item>
             <title>0.2.11</title>
             <pubDate>Thu, 29 Oct 2026 22:18:25 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.11-alpha.1-test.25</link>
@@ -781,65 +881,6 @@ publication. The real update from 0.2.1 on the second Mac remains a user
 acceptance test. The library remains local and unencrypted.
 ]]></description>
             <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.2-alpha.1-test.16/Spoken-0.2.2-alpha.1-build.16-arm64-UNSIGNED.dmg" length="14150092" type="application/octet-stream" sparkle:edSignature="/psd7vuyDTlDi3XnuwoemzbFBoFw1joTwIqj+0ONFolSG9yJsmBJ0SGKTUaitZgWUFion8pKjNCtirxQQdRcDQ=="/>
-        </item>
-        <item>
-            <title>0.2.1</title>
-            <pubDate>Sun, 20 Sep 2026 22:21:11 +0200</pubDate>
-            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.1-alpha.1-test.15</link>
-            <sparkle:channel>alpha</sparkle:channel>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.1 — Test Build 15
-
-A security and reliability update for the Spoken 0.2 workbench.
-
-## Changes
-
-- Secured Markdown and diagram rendering against injected scripts and unwanted
-  network requests. Diagrams, timestamp links and native document actions
-  remain available.
-- Kept the original dictation when text cleanup fails. Retry Cleanup uses the
-  same captured text; Insert Raw explicitly inserts the original transcript.
-  Recovery updates the existing history entry rather than creating duplicates.
-- Fixed **Spoken beenden** in the screen-recording permission step: the wizard
-  closes before the normal app quit request. Recording and unsaved-document
-  protections remain active; forced termination is not used.
-- Added Back navigation in setup and an explicit already-allowed permission
-  screen when reviewing previous steps. Visible permission screens refresh
-  their status while Spoken is active.
-
-## Update an existing installation
-
-In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
-when it appears. Download, install and allow Spoken to restart. The installed
-version afterwards should be **0.2.1 (15)**. Finish any recording or dictation
-before installing, and save pending document edits when asked.
-
-Builds 9 and newer can receive this update. Existing library content is
-preserved. Older pre-library builds remain excluded from this update channel.
-
-## Fresh installation
-
-Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
-Spoken from Applications. This is the release app, not Spoken Dev. Requires an
-Apple Silicon Mac; macOS 15 or newer is the supported test target.
-
-This test build is **ad-hoc signed, not Developer ID signed or notarized**.
-macOS may require **System Settings → Privacy & Security → Open Anyway** on
-first launch. Permissions may need to be granted again. In-app update archives
-are authenticated with Sparkle's EdDSA signature.
-
-## Validation and limitations
-
-The automated regression suite and packaged artifact are checked before
-publication. The real update from 0.2.0 on the second Mac remains a user
-acceptance test. This patch does not add speech providers or change library
-storage. The library remains local and unencrypted.
-]]></description>
-            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.1-alpha.1-test.15/Spoken-0.2.1-alpha.1-build.15-arm64-UNSIGNED.dmg" length="14039180" type="application/octet-stream" sparkle:edSignature="AT8LEGH4FXYQXzrDr59kJiXKV8tCUr9VhiJ+J+s8WUu+6o5mBV6/Yd4Wn/fJy+gMTH5rmjGWYms4XlnLM7LhAQ=="/>
         </item>
     </channel>
 </rss>
