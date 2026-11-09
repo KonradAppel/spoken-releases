@@ -3,6 +3,84 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.13</title>
+            <pubDate>Mon, 09 Nov 2026 17:01:07 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.13-alpha.1-test.27</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.13 — Test Build 27
+
+A meeting release: a more accurate speaker detection model, a quick way to
+check guessed speakers, search inside a transcript, and music that keeps
+sounding right while Spoken is open.
+
+## Speakers
+
+- **More accurate speaker detection.** Nemotron 3 Diarization is the new
+  default. On a real meeting with three people on the call audio, it found
+  all three, where the previous method found two. Settings › Meetings ›
+  "Speaker detection model" lets you switch back. The first run downloads the
+  model once (about 190 MB).
+- **Expected speakers are an upper limit.** The count you set for the next
+  run is now a maximum, not an exact target. With more than 8 expected
+  voices, Spoken uses the previous method, which has no fixed limit.
+- **Check guessed speakers in a few keystrokes.** When passages have a
+  guessed speaker, the transcript shows "N uncertain" in its top-right corner.
+  Click it: each passage is shown and played. Press Return to keep the
+  speaker or 1–9 to pick another one, and the next passage follows. Arrow
+  keys go back and forth, Esc closes.
+- **Your microphone is you.** If the microphone has one voice, all of its
+  speech goes to that voice, and it is named after the Owner name in
+  Settings › General. Names you typed yourself always win.
+- **Unassigned speech is visible again.** Manage Speakers lists speech
+  without a speaker per audio track, with samples and "Assign to …".
+- **Fewer voices than expected?** The speaker panel now says so, for example
+  "System: 3 expected, 2 found".
+- After a dictation, the speaker review in the notch comes back where you
+  left it, with the names you already typed.
+
+## Transcripts
+
+- **Find in a transcript.** ⌘F opens a small floating search in the
+  transcript's top-right corner. Matches are highlighted; Return, ⇧Return,
+  ⌘G and ⇧⌘G jump between them, and accents don't matter ("prochazka" finds
+  "Procházka"). Esc closes it.
+- **Meetings without audio.** Delete a meeting's audio straight from the
+  player bar. The transcript and speaker bands stay, and Play moves through
+  the meeting silently.
+
+## Sidebar
+
+- **Sort projects.** The button in the Projects header sorts by Last
+  Updated, Name, Created or your own order. The Archive sorts by Last
+  Archived or Name.
+- ⌘K opens search, ⌘N starts a new meeting, ⇧⌘N creates a new project.
+- Dictation history opens faster.
+
+## Audio
+
+- **Music no longer sounds muffled while Spoken is open.** Spoken used to
+  load Apple's voice processing shortly after launch. That alone turned other
+  apps down and switched AirPods to their call quality, even when nothing was
+  recording. It now loads only when you open the meeting setup. During a
+  meeting, other audio is still turned down slightly, as intended.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.13 (27)**.
+Finish any recording or dictation first.
+
+There is no library update in this release. Builds 9 and newer can receive
+this update.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.13-alpha.1-test.27/Spoken-0.2.13-alpha.1-build.27-arm64.dmg" length="24746122" type="application/octet-stream" sparkle:edSignature="2HA5ZLpefUrDP8rLC/pqDoSppJ7FeUDAgVaVOR8oL3Gid05QpUQs/l0miTbNm0o6eeKfCXIu5ojNbSsNhofmAg=="/>
+        </item>
+        <item>
             <title>0.2.12</title>
             <pubDate>Fri, 06 Nov 2026 23:35:23 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.12-alpha.1-test.26</link>
@@ -815,72 +893,6 @@ publication. The real update from 0.2.2 on the second Mac remains a user
 acceptance test. The library remains local and unencrypted.
 ]]></description>
             <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.3-alpha.1-test.17/Spoken-0.2.3-alpha.1-build.17-arm64-UNSIGNED.dmg" length="14274950" type="application/octet-stream" sparkle:edSignature="PSa3rbeb3Bz+NfnaFczKvWIm5wtg9OYiBCZ0FuK5F8MGCakE/3WUp0E+0c8TEca7jNTfSiwpwlehJYe683rrCA=="/>
-        </item>
-        <item>
-            <title>0.2.2</title>
-            <pubDate>Thu, 24 Sep 2026 16:34:18 +0200</pubDate>
-            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.2-alpha.1-test.16</link>
-            <sparkle:channel>alpha</sparkle:channel>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.2 — Test Build 16
-
-A setup, dictation and agent update for the Spoken 0.2 workbench.
-
-## Changes
-
-- New first-launch setup in four steps in the main window: permissions in one
-  list with explanations, the built-in speech model, a first dictation from the
-  menu bar, and a summary. A Get Started checklist in the sidebar covers the
-  optional next steps: connect an agent, record a meeting, add text and
-  screenshot models.
-- Added **Exxperts** as an agent client. Spoken writes its connector with the
-  profile's key directly into Exxperts' MCP configuration, never through the
-  clipboard.
-- Clean, Concise and Structured no longer lose a dictation when no text
-  provider is set up or the provider fails. The raw text is inserted and an
-  orange notice says why, with a button to the provider settings. Cleanup gives
-  up after 60 seconds without any response instead of ten minutes, and
-  cancelling keeps the dictation and its audio in the history.
-- Dictation errors and the transcript preview grow out of the notch instead of
-  hiding behind it.
-- The speech model starts loading as soon as a dictation starts, so the first
-  dictation after a pause is faster.
-- A tidier menu bar menu: meeting recording on its own, then the last
-  dictation, Dictation Mode and Dictation Options. "Nothing heard" explains how
-  the shortcut works.
-
-## Update an existing installation
-
-In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
-when it appears. Download, install and allow Spoken to restart. The installed
-version afterwards should be **0.2.2 (16)**. Finish any recording or dictation
-before installing, and save pending document edits when asked.
-
-Builds 9 and newer can receive this update. Existing library content is
-preserved. Older pre-library builds remain excluded from this update channel.
-
-## Fresh installation
-
-Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
-Spoken from Applications. This is the release app, not Spoken Dev. Requires an
-Apple Silicon Mac; macOS 15 or newer is the supported test target.
-
-This test build is **ad-hoc signed, not Developer ID signed or notarized**.
-macOS may require **System Settings → Privacy & Security → Open Anyway** on
-first launch. Permissions may need to be granted again. In-app update archives
-are authenticated with Sparkle's EdDSA signature.
-
-## Validation and limitations
-
-The automated regression suite and packaged artifact are checked before
-publication. The real update from 0.2.1 on the second Mac remains a user
-acceptance test. The library remains local and unencrypted.
-]]></description>
-            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.2-alpha.1-test.16/Spoken-0.2.2-alpha.1-build.16-arm64-UNSIGNED.dmg" length="14150092" type="application/octet-stream" sparkle:edSignature="/psd7vuyDTlDi3XnuwoemzbFBoFw1joTwIqj+0ONFolSG9yJsmBJ0SGKTUaitZgWUFion8pKjNCtirxQQdRcDQ=="/>
         </item>
     </channel>
 </rss>
