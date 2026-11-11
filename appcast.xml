@@ -3,6 +3,59 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.15</title>
+            <pubDate>Wed, 11 Nov 2026 14:00:18 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.15-alpha.1-test.29</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.15 — Test Build 29
+
+Better sound while you dictate with AirPods, and fewer doubled sentences in
+meetings over loudspeakers.
+
+## Dictation
+
+- **AirPods keep their music quality.** With AirPods or other Bluetooth
+  headphones, Spoken now records your dictation from the Mac's microphone.
+  The headphones no longer switch to the muffled call mode. A microphone you
+  choose yourself is always kept.
+- **Music and videos pause while you dictate.** They continue at the same
+  spot afterwards. If nothing is audibly playing, nothing starts, also right
+  after you paused a video yourself. You can turn this off under Settings ›
+  Dictation › "Pause media while dictating".
+- **One click to allow it.** Pausing media needs a one-time macOS permission.
+  Setup asks for it after the three required permissions, and Settings ›
+  Permissions has its own row with an "Allow" button. It shows "Allowed" the
+  first time music pauses while you dictate.
+- The microphone menu's first entry now reads "Default (device name)".
+
+## Meetings
+
+- **Fewer doubled sentences over loudspeakers.** After the meeting, Spoken
+  removes the other side's voices from your microphone track, using the
+  recorded system audio as a reference. Their sentences no longer appear a
+  second time as "you". Your own words stay, also when you talk over each
+  other. With headphones nothing changes.
+- Microphone passages that repeat the other side word for word at the same
+  moment are dropped from the transcript, also when the other person sits in
+  the same room.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.15 (29)**.
+Finish any recording or dictation first.
+
+There is no library update in this release. Builds 9 and newer can receive
+this update.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.15-alpha.1-test.29/Spoken-0.2.15-alpha.1-build.29-arm64.dmg" length="24829212" type="application/octet-stream" sparkle:edSignature="vdrf//cV7YZwu38XC94TTCATmSgIhxeRDgRmcZhWG63Xb4FfX1QPDuObBTigDZY9vP8gf++kn4qXuNGD/UcSCw=="/>
+        </item>
+        <item>
             <title>0.2.14</title>
             <pubDate>Tue, 10 Nov 2026 13:16:01 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.14-alpha.1-test.28</link>
@@ -799,83 +852,6 @@ meetings. The full curated audio model catalog and broader evaluation remain
 follow-up work. The Spoken Library remains local and unencrypted.
 ]]></description>
             <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.5-alpha.1-test.19/Spoken-0.2.5-alpha.1-build.19-arm64-UNSIGNED.dmg" length="14556914" type="application/octet-stream" sparkle:edSignature="UYDS6yNUKvCFHKgg1EwNhubkpA9ey89C6Wgtkh1zB9RMYRA/v0nR0MA0sYYUkvgGD6mAwKjwGXe2qi2Pa2u3Aw=="/>
-        </item>
-        <item>
-            <title>0.2.4</title>
-            <pubDate>Fri, 25 Sep 2026 16:00:35 +0200</pubDate>
-            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.4-alpha.1-test.18</link>
-            <sparkle:channel>alpha</sparkle:channel>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
-            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.4 — Test Build 18
-
-One catalog for all flows, and sensitive projects that stay on the models
-you allow.
-
-## Changes
-
-- **Flow catalog.** Settings › Flows lists every flow with the number of
-  projects using it. Flows are shared: edit one there and it changes in every
-  project that uses it; duplicate it for a variant. Each project keeps its own
-  output language, model and preselection, and uses up to ten flows. On a
-  project page, **Add Flow** picks a catalog flow or writes a new one, which
-  lands in the catalog. **New Project** lets you check the flows it starts
-  with. Your existing flows are merged on the first start: identical flows
-  become one catalog flow.
-- **Sensitive projects.** Each provider has **Allow for sensitive projects**.
-  Local providers start allowed; Enterprise and Cloud only once you switch it
-  on. Right-click a model to decide for it alone; Ollama cloud models always
-  need their own allowance. Settings › Flows has a **Default model for
-  sensitive projects**. A flow a sensitive project may not run shows a
-  warning, cannot be started or checked after a meeting, and appears in the
-  bell with every way to fix it. Dictation modes show whether their text
-  leaves the Mac.
-- **Agents.** Claude Code, Codex, OpenCode and Exxperts can each be added once;
-  Custom as often as needed. Profiles can be removed.
-- **Right-click to delete** a dictation mode, a provider or an agent in
-  Settings.
-
-## Update an existing installation
-
-In **Spoken**, choose **Check for Updates…**, or use the sidebar update action
-when it appears. Download, install and allow Spoken to restart. The installed
-version afterwards should be **0.2.4 (18)**. Finish any recording or dictation
-before installing, and save pending document edits when asked.
-
-On the first start the library is changed for the flow catalog. Spoken copies
-it to `backups/` inside the library first; the copy is deleted after 14 days
-or when you delete anything permanently. **Restart connected agents** (Claude
-Code, Codex, OpenCode, Exxperts) afterwards so they read flows in the new
-format.
-
-If a project is marked sensitive and its flows use an Enterprise or Cloud
-provider, those flows stop until you allow the provider or choose another
-model. The bell lists them.
-
-Builds 9 and newer can receive this update. Older pre-library builds remain
-excluded from this update channel.
-
-## Fresh installation
-
-Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
-Spoken from Applications. This is the release app, not Spoken Dev. Requires an
-Apple Silicon Mac; macOS 15 or newer is the supported test target.
-
-This test build is **ad-hoc signed, not Developer ID signed or notarized**.
-macOS may require **System Settings → Privacy & Security → Open Anyway** on
-first launch. Permissions may need to be granted again. In-app update archives
-are authenticated with Sparkle's EdDSA signature.
-
-## Validation and limitations
-
-The automated regression suite and packaged artifact are checked before
-publication. The library migration was tested on a copy of a real library.
-The library remains local and unencrypted.
-]]></description>
-            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.4-alpha.1-test.18/Spoken-0.2.4-alpha.1-build.18-arm64-UNSIGNED.dmg" length="14470386" type="application/octet-stream" sparkle:edSignature="6YTBg09DSDKfWIfJLoTXySawjzkTpt/nPU4eT/2uRH7hle22FfCRpxgJvcQ3MUPUhBQYPwf+PQagkdky1TdFAQ=="/>
         </item>
     </channel>
 </rss>
