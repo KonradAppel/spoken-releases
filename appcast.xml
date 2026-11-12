@@ -3,6 +3,88 @@
     <channel>
         <title>Spoken</title>
         <item>
+            <title>0.2.16</title>
+            <pubDate>Thu, 12 Nov 2026 17:47:15 +0100</pubDate>
+            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.16-alpha.1-test.30</link>
+            <sparkle:channel>alpha</sparkle:channel>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
+            <sparkle:shortVersionString>0.2.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.16 — Test Build 30
+
+A new way to work inside a project, a page for everything you dictated, and
+a folder that receives your finished meetings.
+
+## Workbench
+
+- **One meeting at a time.** A project shows a path row "Project / Meeting"
+  with one small tab per part of the meeting: transcript, summary and the
+  other documents. The "+" menu brings back parts you closed.
+- **Back and forward.** ⌘[ and ⌘] step through what you opened, also across
+  projects.
+- **Up to four panes.** Drag a tab to an edge to split the view. Drag the
+  lines between panes to resize them.
+- **Times jump into the transcript.** A time in a summary or another document
+  is a link that opens the transcript at that moment.
+- **Copy and Share per pane.** Each pane has a share menu; Copy puts the text
+  on the clipboard.
+- The player sits at the bottom. The meeting details, with the calendar
+  entry, open from a button at the top right. The project itself opens as a
+  full page.
+
+## Timeline and Dictations
+
+- **Timeline.** A new entry at the top of the sidebar lists every meeting of
+  every project by day. A meeting that waits for you is marked, and "Needs
+  you" filters to those.
+- **Dictations.** A new page lists everything you dictated by day, with the
+  newest one as a "Latest" card on top. Copy a dictation, transcribe it again
+  or move it to the Trash. It replaces the History tab in Settings ›
+  Dictation.
+- **Keep dictations.** Choose Forever, 30 days, 90 days or 1 year. With a
+  period chosen, older dictations move to the Trash, where you can restore
+  them. Spoken asks before a change moves existing dictations. "Forever" is
+  the default, so nothing changes unless you choose a period.
+
+## Target folder
+
+- **A Markdown copy of your meetings.** A project can name a folder, for
+  example one synced with SharePoint or OneDrive. Spoken writes every
+  finished meeting there: one subfolder per meeting with the transcript, the
+  summary and the other documents, updated when they change.
+- **You choose what is written.** A checklist per project selects the
+  transcript, the screenshots and each flow's document.
+- It is a one-way copy. Spoken never reads the folder back, deletes nothing
+  in it, and never replaces a file it did not write itself.
+
+## Models
+
+- **Settings › Models & Providers in two levels.** Built-in speech models at
+  the top, then one language model, with everything else under "Advanced".
+  "Test model" shows whether the chosen model can handle a whole meeting.
+- **Apple's on-device text model is on hold.** It no longer steps in by
+  itself. Without a language model, dictation modes fall back to Raw with a
+  notice. An existing explicit Apple choice keeps working.
+
+## Preview
+
+- Settings › Storage & Trash has a new choice "Keep meeting audio". It is a
+  preview: no audio is deleted in this build.
+
+## Update an existing installation
+
+In **Spoken**, choose **Check for Updates…**. Download and install the update,
+then allow Spoken to restart. The installed version should be **0.2.16 (30)**.
+Finish any recording or dictation first.
+
+This release updates the library once at the first start; it only adds
+fields for the target folder. Builds 9 and newer can receive this update.
+]]></description>
+            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.16-alpha.1-test.30/Spoken-0.2.16-alpha.1-build.30-arm64.dmg" length="25298031" type="application/octet-stream" sparkle:edSignature="6rv9heUe6HaodwE9MVNheZVxlSvV7M9EA0Axfdt9BJfVEwoWGJOO8VO9Cc4RXMUJELWpoOzEBnBXW8fct7IUCQ=="/>
+        </item>
+        <item>
             <title>0.2.15</title>
             <pubDate>Wed, 11 Nov 2026 14:00:18 +0100</pubDate>
             <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.15-alpha.1-test.29</link>
@@ -781,77 +863,6 @@ call plays through speakers (KON-226); marking up screenshots in a call is not
 available yet (KON-241). The Spoken Library remains local and unencrypted.
 ]]></description>
             <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.6-alpha.1-test.20/Spoken-0.2.6-alpha.1-build.20-arm64-UNSIGNED.dmg" length="23401960" type="application/octet-stream" sparkle:edSignature="dTGKIhB9jRiemFNatM1MYLUW5/yhy5dkbeOrTlr7xMBa+obAuW8qkX0pk90r76cAN61T8KOOyfigkYMP5oXdCQ=="/>
-        </item>
-        <item>
-            <title>0.2.5</title>
-            <pubDate>Fri, 16 Oct 2026 23:42:57 +0200</pubDate>
-            <link>https://github.com/KonradAppel/spoken-releases/releases/tag/v0.2.5-alpha.1-test.19</link>
-            <sparkle:channel>alpha</sparkle:channel>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:minimumUpdateVersion>9</sparkle:minimumUpdateVersion>
-            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Spoken 0.2.5 — Test Build 19
-
-Optional OpenAI API transcription, clearer model lists, and visible meeting
-processing steps.
-
-## Changes
-
-- **Optional speech API.** Add an OpenAI connection in Settings › Models &
-  Providers with your own API key, then choose it separately for Dictation or
-  Meetings. Built-in Parakeet remains the default and needs no API account.
-  Spoken labels the processing location before audio is sent. Cloud use is
-  explicit; sensitive projects require a separate allowance.
-- **Meeting models.** `whisper-1` can return word timestamps for local speaker
-  matching. Text-only transcription models such as `gpt-transcribe` are offered
-  for dictation, not for meetings. Spoken retains the original meeting audio if
-  transcription fails.
-- **Stable route and provenance.** A meeting stores the exact provider profile
-  and model used. If the selected connection, model, or sensitive-project
-  permission changes during a long job, Spoken stops before another audio
-  chunk is uploaded; retry after checking the settings.
-- **Provider models.** Search and filter a provider's reported models by text,
-  vision, transcription, speech, image, embeddings, or enabled state. The list
-  distinguishes reported facts, shared-list information, and name guesses.
-  Its menu can set capabilities for an unusual model and control sensitive
-  project access.
-- **Meeting progress.** The processing panel shows the current step, progress,
-  and route. Failed transcription no longer loops into speaker review.
-
-## Update an existing installation
-
-In **Spoken**, choose **Check for Updates…**. Download and install the update,
-then allow Spoken to restart. The installed version should be **0.2.5 (19)**.
-Finish any recording or dictation first, and save pending document edits when
-asked. Existing provider and library settings remain in place; this build does
-not add a library migration.
-
-Builds 9 and newer can receive this update. Older pre-library builds remain
-excluded from this update channel. OpenAI is optional and requires your own
-API key; Spoken does not use a ChatGPT account sign-in.
-
-## Fresh installation
-
-Download the DMG, drag **Spoken** to **Applications**, eject the DMG, then open
-Spoken from Applications. This is the release app, not Spoken Dev. The test
-target is an Apple Silicon Mac with macOS 15 or newer.
-
-This test build is **ad-hoc signed, not Developer ID signed or notarized**.
-macOS may require **System Settings → Privacy & Security → Open Anyway** on
-first launch. Permissions may need to be granted again. In-app update archives
-are authenticated with Sparkle's EdDSA signature.
-
-## Validation and limitations
-
-The automated regression suite and packaged artifact are checked before
-publication. One consented synthetic German meeting sample was transcribed
-through OpenAI `whisper-1`; it does not establish quality or cost for long
-meetings. The full curated audio model catalog and broader evaluation remain
-follow-up work. The Spoken Library remains local and unencrypted.
-]]></description>
-            <enclosure url="https://github.com/KonradAppel/spoken-releases/releases/download/v0.2.5-alpha.1-test.19/Spoken-0.2.5-alpha.1-build.19-arm64-UNSIGNED.dmg" length="14556914" type="application/octet-stream" sparkle:edSignature="UYDS6yNUKvCFHKgg1EwNhubkpA9ey89C6Wgtkh1zB9RMYRA/v0nR0MA0sYYUkvgGD6mAwKjwGXe2qi2Pa2u3Aw=="/>
         </item>
     </channel>
 </rss>
